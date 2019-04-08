@@ -1,0 +1,153 @@
+.container {
+	height: 100vh;
+	display: grid;
+	grid-template-areas: 
+	'heading heading heading heading heading heading'
+	'asider asider darkBlue darkBlue darkBlue darkBlue'
+	'asider asider collFull collFull rowTwoFull rowTwoFull'
+	'asider asider collFull collFull rowTwoFull rowTwoFull'
+	'asider asider collFull collFull secondCollFull rightThreeElementsOne'
+	'asider asider collFull collFull secondCollFull rightThreeElementsTwo'
+	'asider asider collFull collFull secondCollFull rightThreeElementsThree'
+	'foot foot foot foot foot foot'
+	;
+}
+
+.heading {
+	grid-area: heading;
+	text-align: center;
+	color: white;
+	background: #75e0f7;
+	padding: 10px;
+	margin: 5px 5px 3px 5px;
+	border: 2px solid silver;
+	font-size: 20px;
+}
+
+h1 {
+	margin-top: 25px; 
+}
+
+.leftSide {
+	grid-area: asider;
+	background: #ffc06e;
+	margin-left: 5px;
+	border-top: 2px solid silver;
+	border-right: 2px solid silver;
+	border-left: 2px solid silver;
+
+	display: grid;
+	grid-template-areas: 
+	'. hugeDiv hugeDiv hugeDiv hugeDiv .'
+	'. hugeDiv hugeDiv hugeDiv hugeDiv .'
+	'. hugeDiv hugeDiv hugeDiv hugeDiv .'
+	'. midDivOne midDivOne midDivOne midDivOne .'
+	'. midDivOne midDivOne midDivOne midDivOne .'
+	'. midDivTwo midDivTwo midDivTwo midDivTwo .'
+	'. midDivTwo midDivTwo midDivTwo midDivTwo .'
+	'. littleDiv littleDiv littleDiv littleDiv .'
+	;
+}
+ .square {
+ 	grid-area: hugeDiv;
+ 	text-align: center;
+ 	background: #63a0df;
+ 	margin: 5% 0;
+ 	border-radius: 5px;
+ 	
+ }
+
+.squareMidOne {
+	grid-area: midDivOne;
+	text-align: center;
+	background: #63a0df;
+	margin-bottom: 5%;
+	border-radius: 5px;
+}
+
+.squareMidTwo {
+	grid-area: midDivTwo;
+	text-align: center;
+	background: #63a0df;
+	margin-bottom: 5%;
+	border-radius: 5px;
+}
+
+.squareLittle {
+	grid-area: littleDiv;
+	text-align: center;
+	background: #63a0df;
+	margin-bottom: 5%;
+	border-radius: 5px;
+}
+
+/* End squares */
+.asideText {
+	text-align: center;
+	color: white;
+	background: #609ede;
+	padding: 15px;
+	width: 90%;
+	margin: 2% auto;
+	border-radius: 5px;
+}
+
+.rightRow {
+	grid-area: darkBlue;
+	background: #6baae9;
+	margin-right: 5px;
+}
+
+.fullColl {
+	grid-area: collFull;
+	background: #6baae9;
+	margin-top: 1%;
+	border-right: 2px solid silver;
+}
+/* col2 row2*/
+.rowTwoColTwo {
+	grid-area: rowTwoFull;
+	background: #6baae9;
+	margin: 1% 5px 0 0;
+}
+
+/* row3 full col*/
+
+.rowThreeFull {
+	grid-area: secondCollFull;
+	background: #6baae9;
+	margin-top: 1%;
+	border-right: 2px solid silver;
+}
+
+/* Right three small elements */
+
+.threeRowsOne {
+	grid-area: rightThreeElementsOne;
+	background: #6baae9;
+	margin: 1% 5px 0 0;
+}
+
+.threeRowsTwo {
+	grid-area: rightThreeElementsTwo;
+	background: #6baae9;
+	margin: 1% 5px 0 0;
+}
+
+.threeRowsThree {
+	grid-area: rightThreeElementsThree;
+	background: #6baae9;
+	margin: 1% 5px 0 0;
+}
+
+
+footer {
+	grid-area: foot;
+	text-align: center;
+	background: #75e0f7;
+	padding: 10px;
+	margin: 0 5px;
+	color: white;
+	font-size: 20px;
+	border: 2px solid silver;
+}
